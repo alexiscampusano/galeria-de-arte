@@ -1,0 +1,269 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* home */
+.home {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.home__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home__title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.home__subtitle {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.home__description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.home__image {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.home__cta {
+  font-size: 20px;
+  background-color: #ffc107;
+  color: #333;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home__cta:hover {
+  background-color: #ffca28;
+}
+
+/* Navbar */
+.header {
+  padding: 20px 0;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo__link {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu__link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.nav-menu__link:hover {
+  text-decoration: underline;
+}
+
+.nav-menu__link.active {
+  color: #ffc107;
+}
+
+/* Gallery */
+.gallery {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.gallery__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery__image {
+  position: relative;
+}
+
+.gallery__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery__image:hover img {
+  transform: scale(1.1);
+}
+
+.gallery__image-description {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-style: italic;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+.contact {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact__info {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.contact__description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.contact__details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact__details li {
+  margin-bottom: 10px;
+}
+
+.contact__form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact__form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact__form textarea {
+  height: 150px;
+}
+
+.contact__form button {
+  background-color: #ffc107;
+  color: #333;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact__form button:hover {
+  background-color: #ffca28;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer__social {
+  margin-top: 10px;
+}
+
+.footer__social-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.footer__social-link:hover {
+  text-decoration: underline;
+}
+
+/* TODO: responsive */

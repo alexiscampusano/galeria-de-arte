@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería de Arte</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#" class="logo__link">Galería de Arte</a>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="#" class="nav-menu__link active" data-page="home"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-menu__link"
+                data-page="gallery"
+                id="gallery"
+                >Galería</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-menu__link" data-page="contact"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <!-- Dynamic content will be loaded here... -->
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; <span id="currentYear"></span> Todos los derechos reservados.
+        Galería de Arte.
+      </p>
+      <div class="footer__social">
+        <a
+          href="https://github.com/alexiscampusano"
+          target="_blank"
+          class="footer__social-link"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/alexiscampusano"
+          target="_blank"
+          class="footer__social-link"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      let currentYear = new Date().getFullYear();
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+  </body>
+</html>
