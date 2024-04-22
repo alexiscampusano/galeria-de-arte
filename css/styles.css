@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-/* home */
+/* Home */
 .home {
   background-color: #f9f9f9;
   padding: 50px 20px;
@@ -27,9 +27,8 @@ body {
 }
 
 .home__title {
-  font-size: 48px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 .home__subtitle {
@@ -41,12 +40,35 @@ body {
 .home__description {
   font-size: 18px;
   line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.home__features {
+  text-align: left;
   margin-bottom: 30px;
+}
+
+.home__features li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  list-style-type: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.home__features li::before {
+  content: "\2022";
+  color: #ffc107;
+  font-size: 20px;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .home__image {
   max-width: 100%;
-  border-radius: 5px;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -69,22 +91,28 @@ body {
   padding: 20px 0;
 }
 
-.logo {
-  margin-right: 20px;
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo__link {
   color: #333;
   text-decoration: none;
   font-size: 24px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  position: fixed;
 }
 
 .nav-menu {
@@ -239,6 +267,19 @@ body {
 
 .contact__form button:hover {
   background-color: #ffca28;
+}
+
+.contact__form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 9.293a1 1 0 011.414 0L10 10.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
 }
 
 /* Footer */
